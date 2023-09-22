@@ -6,14 +6,14 @@ terraform {
     }
 }
 provider "aws" {
-    region = "ap-northeast-1"
-    access_key = "AKIA2SACZ4LTDR4WR6WI"
-    secret_key = "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"
+    region = "ap-southeast-1"
+    access_key = "AKIA2SACZ4LTKUVFUEID"
+    secret_key = "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"
 }
-resource "aws_instance" "exam" {
+resource "aws_instance" "rahulsingh" {
     ami = "ami-0ed99df77a82560e6"
     instance_type = "t2.micro"
 }
 output "public_ip"{
-    value = aws_instance.exam.public_ip
+    value = aws_instance.rahulsingh.public_ip
 }
